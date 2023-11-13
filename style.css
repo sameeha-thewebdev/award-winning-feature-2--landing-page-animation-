@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: #C88E57;
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+nav{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6vw;
+    padding: 37px 0;
+    z-index: 999;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 2vmin;
+    color: #fff;
+}
+
+#page1, #page2{
+    height: 100vh;
+    width: 100vw;
+}
+
+#page1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0 50px;
+}
+
+#page1>video{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 800px;
+    height: 220px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.top-con, .bottom-con{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateX(0deg);
+}
+
+
+.top-con>h1, .bottom-con>h1{
+    font-weight: 100;
+    font-size: 7vmax;
+    line-height: 1;
+}
+
+.top-content{
+    position: absolute;
+    top: 15%;
+    z-index: 99;
+    perspective-origin: top;
+    perspective: 800px;
+}
+
+.bottom-con>p, .top-con>p{
+    font-size: 10px;
+    width: 60%;
+}
+
+.bottom-content{
+    position: absolute;
+    bottom: 10%;
+    z-index: 99;
+    perspective-origin: bottom;
+    perspective: 800px;
+}
