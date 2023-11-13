@@ -24,7 +24,7 @@ tl.to(
 );
 
 tl.to(
-  "#page1>video",
+  "#page1>img",
   {
     width: "100%",
     height: "100%",

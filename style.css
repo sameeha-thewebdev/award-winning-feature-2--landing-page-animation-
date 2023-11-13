@@ -46,13 +46,14 @@ nav a{
     padding: 0 50px;
 }
 
-#page1>video{
+#page1>img{
     position: absolute;
     top: 50%;
     transform: translate(0%, -50%);
     width: 800px;
-    height: 220px;
+    height: 280px;
     object-fit: cover;
+    object-position: 50% 60%;
     z-index: 1;
 }
 
